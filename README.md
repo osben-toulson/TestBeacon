@@ -1,5 +1,6 @@
 # TestBeacon
-Example Code For Unreal Test Beacon Implemtation
+Example Code For Unreal Test Beacon Implemtation<br>
+<sup><i>Tested on UE4.24.3</i></sup>
 
 This UE4 Plugin implements the Test Beacon from the "Online Beacon Example" section from the [official documentation](https://docs.unrealengine.com/en-US/Gameplay/Networking/OnlineBeacons/index.html).
 The goal is to showcase the TestBeacon with minimal frills as a code example.

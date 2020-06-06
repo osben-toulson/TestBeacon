@@ -9,7 +9,8 @@ The goal is to showcase the TestBeacon with minimal frills as a code example.
 <i>UE4 Plugin familiarity assumed</i><br>
 * Create a project and clone this repository into Plugins folder (You may need to create the Plugins folder)
 * Append to DefaultEngine.ini file:<br>
-```[/Script/Engine.Engine]
+```
+[/Script/Engine.Engine]
 !NetDriverDefinitions=ClearArray
 +NetDriverDefinitions=(DefName="GameNetDriver",DriverClassName="/Script/OnlineSubsystemSteam.SteamNetDriver",DriverClassNameFallback="/Script/OnlineSubsystemUtils.IpNetDriver")
 +NetDriverDefinitions=(DefName="BeaconNetDriver",DriverClassName="/Script/OnlineSubsystemSteam.SteamNetDriver",DriverClassNameFallback="/Script/OnlineSubsystemUtils.IpNetDriver")

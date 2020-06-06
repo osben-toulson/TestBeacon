@@ -10,6 +10,11 @@ The goal is to showcase the TestBeacon with minimal frills as a code example.
 * Create a project and clone this repository into Plugins folder (You may need to create the Plugins folder)
 * Append to DefaultEngine.ini file:<br>
 ```
+[/Script/OnlineSubsystemUtils.OnlineBeaconHost]
+ListenPort=7787
+BeaconConnectionInitialTimeout=48.0
+BeaconConnectionTimeout=49.0
+
 [/Script/Engine.Engine]
 !NetDriverDefinitions=ClearArray
 +NetDriverDefinitions=(DefName="GameNetDriver",DriverClassName="/Script/OnlineSubsystemSteam.SteamNetDriver",DriverClassNameFallback="/Script/OnlineSubsystemUtils.IpNetDriver")
